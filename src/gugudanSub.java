@@ -1,7 +1,11 @@
 public class gugudanSub {
-    public static int[] calculate(int n) {
-        int[] result = new int[9];
-        for (int i = 1; i < 10; i++) {
+    int m;
+    public gugudanSub(int num){
+        m = num;
+    }
+    public int[] calculate(int n) {
+        int[] result = new int[m];
+        for (int i = 1; i < this.m + 1; i++) {
             result[i-1] = n * i;
         }
         return result;
